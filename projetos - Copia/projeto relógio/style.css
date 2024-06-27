@@ -1,0 +1,72 @@
+@font-face {
+    font-family: digital;
+    src: url(../fonts/digital-7\ \(mono\).ttf);
+}
+
+/* RESET GERAL*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: digital;
+    font-size: 1.7rem;
+}
+
+body {
+    background: linear-gradient(#00000079, #000), url("https://i.pinimg.com/originals/80/6e/de/806ede5583f088c6bdb788bf867f8064.gif");
+    height: 100vh;
+
+    display: grid;
+    place-items: center;
+}
+
+h1{
+    position: absolute;
+    top: 15%;
+    width: 100%;
+  font-size: 2rem;
+    text-align: center;
+}
+.relogio {
+    background: transparent;
+    width: 90%;
+    padding: 3% 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 8px 10px #00000079;
+    border-radius: 5px;
+
+}
+
+.relogio div {
+    width: 80%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+    letter-spacing: 3px;
+    color: #fff;
+    background: transparent;
+    box-shadow: 5px 5px 15px #000000bd;
+    margin: 2%;
+    padding: 3%;
+}
+
+.relogio span {
+    font-weight: bolder;
+    font-size: 4rem;
+}
+
+.relogio span.tempo {
+    font-size: .7rem;
+}
+
+@media(max-width:760px) {
+    .relogio {
+        flex-direction: column;
+    }
+}
